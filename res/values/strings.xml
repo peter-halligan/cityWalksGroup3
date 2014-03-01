@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">hellowWorldMobile</string>
+    <string name="customInfoText">suck me bitches</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="choose_city">Choose City</string>
+    <string name="dummy_content"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_choose_city">ChooseCity</string>
+
+    <string-array name="cities">
+        <item>Cork</item>
+        <item>Dublin</item>
+    </string-array>
+
+    <string name="select_city_prompt">Select city to view walks</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+
+</resources>

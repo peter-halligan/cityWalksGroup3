@@ -3,17 +3,16 @@ package project.group3.citywalks;
 import project.group3.citywalks.util.SystemUiHider;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -127,7 +126,9 @@ public class ChooseCity extends Activity {
 		    @Override
 		    public void onClick(View v) {
 		        //Inform the user the button has been clicked
-		        Log.w("buttonTset", "choice : " + choice);
+		        Intent i = new Intent(ChooseCity.this, ListWalk.class);
+		        i.putExtra("city",new  Integer(choice).toString());
+		        startActivity(i);
 		    }
 		});
 		

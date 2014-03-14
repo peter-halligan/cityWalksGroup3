@@ -1,14 +1,22 @@
-package project.group3.citywalks;
+package project.group3.citywalks.activities;
 
+import project.group3.citywalks.R;
 import project.group3.citywalks.util.SystemUiHider;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -16,7 +24,12 @@ import android.view.View;
  * 
  * @see SystemUiHider
  */
-public class FullscreenActivity extends Activity {
+public class ChooseCity extends Activity {
+	int choice = 0;
+	 public static final String MyPrefrences = "MyPrefs" ;
+	 public static final String cityId = "cityId";
+	 SharedPreferences sharedpreferences; 
+
 	/**
 	 * Whether or not the system UI should be auto-hidden after
 	 * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -49,7 +62,7 @@ public class FullscreenActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.activity_fullscreen);
+		setContentView(R.layout.activity_choose_city);
 
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
 		final View contentView = findViewById(R.id.fullscreen_content);
@@ -114,8 +127,48 @@ public class FullscreenActivity extends Activity {
 		// Upon interacting with UI controls, delay any scheduled hide()
 		// operations to prevent the jarring behavior of controls going away
 		// while interacting with the UI.
-		findViewById(R.id.dummy_button).setOnTouchListener(
+		findViewById(R.id.Choose_city).setOnTouchListener(
 				mDelayHideTouchListener);
+		
+		findViewById(R.id.Choose_city).setOnClickListener( new View.OnClickListener() {
+		    @Override
+		    public void onClick(View v) {
+		        //Inform the user the button has been clicked
+		        Editor editor = sharedpreferences.edit();
+		        editor.putInt(cityId, choice);
+		        editor.commit(); 
+		        Intent i = new Intent(ChooseCity.this, ListWalk.class);
+		        i.putExtra("city",new  Integer(choice).toString());
+		        startActivity(i);
+		    }
+		});
+		
+		Spinner spinner = (Spinner) findViewById(R.id.city_choice);
+	    //Create an ArrayAdapter using the string array and a default spinner layout
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+		        R.array.cities, R.layout.city_choice_spinner);
+		// Specify the layout to use when the list of choices appears
+	    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		// Apply the adapter to the spinner
+		spinner.setAdapter(adapter);
+		spinner.setOnItemSelectedListener(new OnItemSelectedListener(){
+
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view,
+					int position, long id) 
+			{
+				choice = position + 1;
+				
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				choice = 1;
+				
+			}
+			
+			
+		});
 	}
 
 	@Override

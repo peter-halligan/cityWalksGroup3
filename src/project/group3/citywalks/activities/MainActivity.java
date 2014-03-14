@@ -1,4 +1,4 @@
-package project.group3.citywalks;
+package project.group3.citywalks.activities;
 
 import java.util.ArrayList;
 
@@ -7,8 +7,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-
 import project.group3.citywalks.R;
+import project.group3.citywalks.R.id;
+import project.group3.citywalks.R.layout;
+import project.group3.citywalks.objects.Coordinate;
+
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.MapFragment;

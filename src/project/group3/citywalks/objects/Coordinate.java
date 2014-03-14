@@ -1,4 +1,4 @@
-package project.group3.citywalks;
+package project.group3.citywalks.objects;
 
 public class Coordinate {
 	

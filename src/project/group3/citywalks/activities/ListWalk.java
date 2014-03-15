@@ -2,12 +2,14 @@ package project.group3.citywalks.activities;
 
 import java.util.ArrayList;
 
+
 import project.group3.citywalks.R;
-import project.group3.citywalks.R.id;
-import project.group3.citywalks.R.layout;
+import project.group3.citywalks.dataInterface.WalkHttpClient;
+import project.group3.citywalks.objects.Coordinate;
 import project.group3.citywalks.util.SystemUiHider;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -24,27 +26,30 @@ public class ListWalk extends Activity
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		ArrayList<String> walks = new ArrayList<String>();
-		walks.add("Shandon");
-		walks.add("south parish walk");
-		walks.add("city centre walk");
-
 		setContentView(R.layout.activity_list_walk);
 		Intent i = getIntent();
 		String cityNumber = i.getStringExtra("city");
-		int cityNo = Integer.parseInt(cityNumber);
 		
-		((TextView) findViewById(R.id.listWalks)).setText("Getting walks");
 		
-		StringBuilder sb = new StringBuilder();
-		for(String c: walks)
-		{   
-			sb.append(c);
-			sb.append("\n");
-		}
-		sb.toString();
-		
-		((TextView) findViewById(R.id.listWalks)).setText(sb);
+		SendHttpRequestTask task = new SendHttpRequestTask();
+		task.execute(new String[]{cityNumber});
 		
 	}
+	private class SendHttpRequestTask extends AsyncTask<String, Void, String>{
+
+		  @Override
+		  protected String doInBackground(String... params) {
+		  
+		   String cityId  = params[0];
+		   
+		   WalkHttpClient a = new WalkHttpClient();
+		   String data =  a.getWalks(cityId);
+		   return data;
+		  }
+
+		
+		  protected void onPostExecute(String result) {
+			   ((TextView) findViewById(R.id.listWalks)).setText(result);
+			  }
+		}
 }

@@ -4,13 +4,13 @@ import project.group3.citywalks.R;
 import project.group3.citywalks.util.SystemUiHider;
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,9 +26,7 @@ import android.widget.Spinner;
  */
 public class ChooseCity extends Activity {
 	int choice = 0;
-	 public static final String MyPrefrences = "MyPrefs" ;
-	 public static final String cityId = "cityId";
-	 SharedPreferences sharedpreferences; 
+	SharedPreferences preferences;
 
 	/**
 	 * Whether or not the system UI should be auto-hidden after
@@ -63,7 +61,7 @@ public class ChooseCity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_choose_city);
-
+		
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
 		final View contentView = findViewById(R.id.fullscreen_content);
 
@@ -134,9 +132,10 @@ public class ChooseCity extends Activity {
 		    @Override
 		    public void onClick(View v) {
 		        //Inform the user the button has been clicked
-		        Editor editor = sharedpreferences.edit();
-		        editor.putInt(cityId, choice);
-		        editor.commit(); 
+		    	preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+		        SharedPreferences.Editor editor = preferences.edit();
+		        editor.putInt("cityId", choice);
+		        editor.commit();
 		        Intent i = new Intent(ChooseCity.this, ListWalk.class);
 		        i.putExtra("city",new  Integer(choice).toString());
 		        startActivity(i);

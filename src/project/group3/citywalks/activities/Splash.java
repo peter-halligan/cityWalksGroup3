@@ -9,16 +9,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
 
 public class Splash extends Activity {
-	public static final String MyPrefrences = "MyPrefs" ;
-	public static final String cityId = "cityId";
-	SharedPreferences sharedpreferences; 
+	SharedPreferences sharedPreferences;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+		sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		startApplication();
 	
 	}
@@ -33,12 +34,15 @@ public class Splash extends Activity {
 	             {
 	                  public void run() 
 	                  {
-	                	  if (sharedpreferences.contains(cityId))
-	                      {
-	                	       
-	                       startActivity(new Intent(Splash.this, ListWalk.class));
+	                	
+	                	  if (sharedPreferences.contains("cityId"))
+	                	  {
+	                           startActivity(new Intent(Splash.this, ListWalk.class));
 	                	  }
-	                      startActivity(new Intent(Splash.this, ChooseCity.class));
+	                	  else
+	                	  {
+	                          startActivity(new Intent(Splash.this, ChooseCity.class));
+	                	  }
 	                  }
 	              });
 	         }

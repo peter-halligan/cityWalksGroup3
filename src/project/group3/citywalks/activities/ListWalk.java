@@ -3,6 +3,7 @@ package project.group3.citywalks.activities;
 import java.util.ArrayList;
 
 
+
 import project.group3.citywalks.R;
 import project.group3.citywalks.dataInterface.WalkHttpClient;
 import project.group3.citywalks.objects.Coordinate;

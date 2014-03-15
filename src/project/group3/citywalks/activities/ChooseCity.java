@@ -25,7 +25,7 @@ import android.widget.Spinner;
  * @see SystemUiHider
  */
 public class ChooseCity extends Activity {
-	int choice = 0;
+	int choice;
 	SharedPreferences preferences;
 
 	/**
@@ -136,8 +136,10 @@ public class ChooseCity extends Activity {
 		        SharedPreferences.Editor editor = preferences.edit();
 		        editor.putInt("cityId", choice);
 		        editor.commit();
+		        
 		        Intent i = new Intent(ChooseCity.this, ListWalk.class);
-		        i.putExtra("city",new  Integer(choice).toString());
+		        String city = String.valueOf(choice);
+		        i.putExtra("city", city);
 		        startActivity(i);
 		    }
 		});

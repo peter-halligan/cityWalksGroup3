@@ -26,6 +26,7 @@ import android.widget.Spinner;
  */
 public class ChooseCity extends Activity {
 	int choice;
+	String city;
 	SharedPreferences preferences;
 
 	/**
@@ -131,16 +132,9 @@ public class ChooseCity extends Activity {
 		findViewById(R.id.Choose_city).setOnClickListener( new View.OnClickListener() {
 		    @Override
 		    public void onClick(View v) {
-		        //Inform the user the button has been clicked
-		    	preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-		        SharedPreferences.Editor editor = preferences.edit();
-		        editor.putInt("cityId", choice);
-		        editor.commit();
+		       saveChoice();
 		        
-		        Intent i = new Intent(ChooseCity.this, ListWalk.class);
-		        String city = String.valueOf(choice);
-		        i.putExtra("city", city);
-		        startActivity(i);
+		        openNext();
 		    }
 		});
 		
@@ -212,5 +206,20 @@ public class ChooseCity extends Activity {
 	private void delayedHide(int delayMillis) {
 		mHideHandler.removeCallbacks(mHideRunnable);
 		mHideHandler.postDelayed(mHideRunnable, delayMillis);
+	}
+	private void saveChoice()
+	{
+		 //Inform the user the button has been clicked
+    	preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt("cityId", choice);
+        editor.commit();
+	}
+	private void openNext()
+	{
+		Intent i = new Intent(ChooseCity.this, ListWalk.class);
+        String city = String.valueOf(choice);
+        i.putExtra("city", city);
+        startActivity(i);
 	}
 }

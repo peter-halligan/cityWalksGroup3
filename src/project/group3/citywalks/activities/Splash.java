@@ -37,7 +37,10 @@ public class Splash extends Activity {
 	                	
 	                	  if (sharedPreferences.contains("cityId"))
 	                	  {
-	                           startActivity(new Intent(Splash.this, ListWalk.class));
+	                		  Intent i = new Intent(Splash.this, ListWalk.class);
+	                		  i.putExtra("city", String.valueOf(sharedPreferences.getInt("cityId", 1)));
+	                          startActivity(i);
+	                           
 	                	  }
 	                	  else
 	                	  {

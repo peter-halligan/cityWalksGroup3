@@ -1,7 +1,13 @@
 package project.group3.citywalks.objects;
 
-public class Coordinate {
+import java.io.Serializable;
+
+public class Coordinate  implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3146276018216983352L;
 	private double latitude;
 	private double longitude;
 	private int coordinateId;

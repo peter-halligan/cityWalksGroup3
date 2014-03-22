@@ -1,15 +1,21 @@
 package project.group3.citywalks.objects;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class City {
+public class City  implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1851695322891039295L;
+	
 	private int cityId;
 	private String cityName;
 	private Coordinate midpoint;
 	
 	public City(int cityId, String cityName, Coordinate midpoint,
-			ArrayList<Walk> walkList) {
+			ArrayList<Walk> walkList){
 		super();
 		this.cityId = cityId;
 		this.cityName = cityName;

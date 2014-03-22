@@ -1,5 +1,7 @@
 package project.group3.citywalks.activities;
 
+import java.io.Serializable;
+
 import project.group3.citywalks.R;
 import project.group3.citywalks.util.SystemUiHider;
 import android.annotation.TargetApi;
@@ -10,7 +12,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,7 +25,11 @@ import android.widget.Spinner;
  * 
  * @see SystemUiHider
  */
-public class ChooseCity extends Activity {
+public class ChooseCity extends Activity implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8168505609876151458L;
 	int choice;
 	String city;
 	SharedPreferences preferences;

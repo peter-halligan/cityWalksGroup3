@@ -6,29 +6,17 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-
-import android.util.Log;
 
 public class WalkHttpClient {
 
 	
-	private static String base_url = "http://www.peterhalligan.com/get_walk.php?";
+	private static String base_url = "http://www.peterhalligan.com/";
 	
-	public String getWalks(String cityId){
-		base_url = base_url + "cityId=" + cityId;
+	public String getCordinates(String cityId){
+		String coordinates = base_url + "get_coordinates.php?" +"cityId=" + cityId;
 		try {
-			HttpURLConnection con = (HttpURLConnection) ( new URL(base_url)).openConnection();
+			HttpURLConnection con = (HttpURLConnection) ( new URL(coordinates)).openConnection();
+			
 			con.setRequestMethod("GET");
 			con.setDoInput(true);
 			con.setDoOutput(true);
@@ -53,5 +41,65 @@ public class WalkHttpClient {
 		return null;
 	}
 	
+	public String getWalk(String cityId)
+	{
+		String walk = base_url + "get_walk.php?" +"cityId=" + cityId;
+		try {
+			HttpURLConnection con = (HttpURLConnection) ( new URL(walk)).openConnection();
+			
+			con.setRequestMethod("GET");
+			con.setDoInput(true);
+			con.setDoOutput(true);
+			con.connect();
+			
+			BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+			StringBuffer buffer = new StringBuffer();
+			String line = null;
+			while (  (line = in.readLine()) != null )
+				buffer.append(line + "\r\n");
+
+			in.close();
+            con.disconnect();
+			return buffer.toString();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+		
+	}
 	
+	public String getPoi(String cityId)
+	{
+		String poi = base_url + "get_poi.php?" +"cityId=" + cityId;
+		try {
+			HttpURLConnection con = (HttpURLConnection) ( new URL(poi)).openConnection();
+			
+			con.setRequestMethod("GET");
+			con.setDoInput(true);
+			con.setDoOutput(true);
+			con.connect();
+			
+			BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+			StringBuffer buffer = new StringBuffer();
+			String line = null;
+			while (  (line = in.readLine()) != null )
+				buffer.append(line + "\r\n");
+
+			in.close();
+            con.disconnect();
+			return buffer.toString();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+		
+	}
 }

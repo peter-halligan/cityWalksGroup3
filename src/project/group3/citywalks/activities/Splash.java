@@ -4,13 +4,13 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import project.group3.citywalks.R;
-import project.group3.citywalks.R.layout;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
+
 
 public class Splash extends Activity {
 	SharedPreferences sharedPreferences;

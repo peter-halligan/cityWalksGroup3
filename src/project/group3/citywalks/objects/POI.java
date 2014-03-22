@@ -1,32 +1,72 @@
 package project.group3.citywalks.objects;
 
+import java.io.Serializable;
 
-public class POI {
-	private int poiId;
-	private Coordinate coordinate;
+
+public class POI  implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2187528287036708868L;
+	private int poiid;
+	private int cid;
 	private String name;
 	private String description;
+	private int type;
+	private int walkId;
 	
-	public POI(int poiId, Coordinate coordinate, String name, String description) {
-		super();
-		this.poiId = poiId;
-		this.coordinate = coordinate;
-		this.name = name;
-		this.description = description;
+	public int getWalkId() {
+		return walkId;
 	}
-		
-	public int getPoiId() {
-		return poiId;
+
+	public void setWalkId(int walkId) {
+		this.walkId = walkId;
 	}
-	public void setPoiId(int poiId) {
-		this.poiId = poiId;
+	private Coordinate coordinate;
+	
+	public int getPoiid() {
+		return poiid;
 	}
-	public Coordinate getCoordinate() {
-		return coordinate;
+
+	public void setPoiid(int poiid) {
+		this.poiid = poiid;
 	}
+
+	public int getCid() {
+		return cid;
+	}
+
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
 	public void setCoordinate(Coordinate coordinate) {
 		this.coordinate = coordinate;
 	}
+
+	public POI() {
+		super();
+		this.poiid = 0;
+		this.cid = 0;
+		this.name = "";
+		this.description = "";
+		this.type = 0;
+		this.coordinate = null;
+	}
+		
+	
+	public Coordinate getCoordinate() {
+		return coordinate;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -39,7 +79,5 @@ public class POI {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	
 	
 }

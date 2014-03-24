@@ -21,6 +21,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -45,7 +46,7 @@ public class ListWalk extends Activity
 		Intent i = getIntent();
 		String cityNumber = i.getStringExtra("city");
 		preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-		
+		cityNumber = String.valueOf(preferences.getInt("cityId",-1));
 		SendHttpRequestTask task = new SendHttpRequestTask();
 		task.execute(new String[]{cityNumber});
 		
@@ -151,7 +152,7 @@ public class ListWalk extends Activity
 		  }
 	}
 	private void getUserWalks() {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stu
+		Log.d("userId", String.valueOf(preferences.getInt("userId", 22)));
 	}
 }

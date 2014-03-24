@@ -24,7 +24,7 @@ public class JsonUserParse {
     static InputStream is = null;
     static JSONObject jObj = null;
     static String jsonLogin = "";
-    private static String base_url = "http://www.peterhalligan.com/mobilelogin.php";
+    private static String base_url = "http://www.peterhalligan.com/mobilelogin3.php";
     private Integer userId;
  
     // constructor
@@ -71,18 +71,15 @@ public class JsonUserParse {
 	            jObj = new JSONObject(jsonLogin);           
 	        } catch (JSONException e) {
 	            Log.e("JSON Parser", "Error parsing data " + e.toString());
-	            return userId = -1;
+	           
 	        }
 	 
 	        // return JSON String
 			try {
 				if(jObj !=null)
 				{
-					JSONArray jArr = jObj.getJSONArray("login");
-					if(jArr != null)
-					{
-						userId = jArr.getJSONObject(0).getInt("userId");
-					}
+					
+						userId = jObj.getInt("userId");
 				}
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block

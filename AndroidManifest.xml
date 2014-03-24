@@ -10,7 +10,7 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <!--
          The following two permissions are not required to use
-			Google Maps Android API v2, but are recommended.
+			Google Maps Android API v2, but are recommended.
     -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -54,7 +54,6 @@
             android:label="@string/title_activity_choose_city"
             android:theme="@style/FullscreenTheme" >
         </activity>
-
         <activity
             android:name="project.group3.citywalks.activities.ListWalk"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -64,6 +63,15 @@
         <activity
             android:name="project.group3.citywalks.activities.PoiDetails"
             android:label="@string/title_activity_poi_details" >
+        </activity>
+        <activity
+            android:name="project.group3.citywalks.activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="project.group3.citywalks.activities.List2"
+            android:label="@string/title_activity_list2" >
         </activity>
         <activity
             android:name="project.group3.citywalks.LoginActivity"

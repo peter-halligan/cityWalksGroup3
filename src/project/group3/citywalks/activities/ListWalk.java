@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import org.json.JSONException;
 
+import project.group3.citywalks.LoginActivity;
 import project.group3.citywalks.R;
 import project.group3.citywalks.dataInterface.JsonWalkParser;
 import project.group3.citywalks.dataInterface.WalkHttpClient;
@@ -16,9 +17,10 @@ import project.group3.citywalks.util.SystemUiHider;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -32,6 +34,7 @@ import android.widget.LinearLayout;
  */
 public class ListWalk extends Activity 
 {
+	SharedPreferences preferences;
     ArrayList<Walk> walks = new ArrayList<Walk>();
    
 	@Override
@@ -41,10 +44,45 @@ public class ListWalk extends Activity
 		setContentView(R.layout.activity_list_walk);
 		Intent i = getIntent();
 		String cityNumber = i.getStringExtra("city");
-		
+		preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		
 		SendHttpRequestTask task = new SendHttpRequestTask();
 		task.execute(new String[]{cityNumber});
+		
+		LinearLayout userWalks = (LinearLayout) findViewById(R.id.userButtonLayout);
+		if(preferences.contains("userId"))
+		{
+			  Button myWalks = new Button(getApplicationContext());
+			  myWalks.setText("My Walks");
+			  userWalks.addView(myWalks);
+			  myWalks.setOnClickListener(new OnClickListener()
+			  {
+					@Override
+					public void onClick(View arg)
+					{
+						getUserWalks();
+					}
+
+					 
+			  });
+	    }
+		else
+		{
+			  Button login = new Button(getApplicationContext());
+			  login.setText("Login");
+			  userWalks.addView(login);
+			  login.setOnClickListener(new OnClickListener()
+			  {
+					@Override
+					public void onClick(View arg)
+					{
+						startActivity(new Intent(ListWalk.this,LoginActivity.class));
+					}
+
+					 
+			  });
+			  
+		}
 		
 	}
 	private class SendHttpRequestTask extends AsyncTask<String, Void, ArrayList<Walk>>{
@@ -104,7 +142,6 @@ public class ListWalk extends Activity
 						
 						Intent i = new Intent(ListWalk.this, MainActivity.class);
 					    i.putExtra("walkId", arg.getId());
-					    Log.w("WALK ID", String.valueOf(arg.getId()));
 						startActivity(i);
 					}
 					 
@@ -112,5 +149,9 @@ public class ListWalk extends Activity
 			  }
 			  
 		  }
+	}
+	private void getUserWalks() {
+		// TODO Auto-generated method stub
+		
 	}
 }

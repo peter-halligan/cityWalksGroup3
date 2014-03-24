@@ -40,6 +40,15 @@
             
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/userButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
     </FrameLayout>
 
 </FrameLayout>

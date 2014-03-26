@@ -1,0 +1,6350 @@
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="report.css" type="text/css"/>
+	<title></title>
+	<script type="text/javascript" src="report.js"></script>
+	<script type="text/javascript" src="link_popup.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
+</head>
+<body style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+	<div id="vplink" style="position:absolute; z-index:21; visibility:hidden">
+		<table bordercolor="#A9BFD3" cellpadding="0" border="1" cellspacing="0">
+			<tr>
+				<td>
+					<table width="100%" cellpadding="0" border="0" cellspacing="0">
+						<tr style="background:#DDDDDD">
+							<td style="font-size: 12px;" align="left">
+Link:							</td>
+							<td style="font-size: 12px;" align="right">
+								<input id="vplink-checkbox" onClick="javascript: vpLinkToggleName()" type="checkbox" />
+								<label for="vplink-checkbox">with Name</label>							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea id="vplink-text" style="width: 348px; height: 60px; border-color: #7EADD9; outline: none;"></textarea>				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="HeaderText">
+		<span>
+CityWalksGroup3 Documentation		</span>
+	</div>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="HeaderLine1">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine2">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine3">
+			</td>
+		</tr>
+	</table>
+	<p>
+		<a target="_content_pane" class="PageParentTitle" href="Package_sc3nbyKGAqBQAQUQ.html">
+project : Package</a>
+<span class="PageParentTitle">&nbsp;.&nbsp;</span>		<a target="_content_pane" class="PageParentTitle" href="Package_yc3nbyKGAqBQAQUY.html">
+group3 : Package</a>
+<span class="PageParentTitle">&nbsp;.&nbsp;</span>		<a target="_content_pane" class="PageParentTitle" href="Package_ac3nbyKGAqBQAQUZ.html">
+citywalks : Package</a>
+<span class="PageParentTitle">&nbsp;.&nbsp;</span>		<a target="_content_pane" class="PageParentTitle" href="Package_OK3nbyKGAqBQAQa6.html">
+util : Package</a>
+	</p>
+	<p class="PageTitle">
+Class - SystemUiHider		<a style="padding-left: 16px; font-size: 12px" onclick="javascript: showVpLink('CityWalksGroup3.vpp://modelelement/Qq3nbyKGAqBQAQbd', 'SystemUiHider\nCityWalksGroup3.vpp://modelelement/Qq3nbyKGAqBQAQbd', this); return false;" href="#">
+			<img src="../images/icons/link.png" border="0"> link</a>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Properties			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      A utility class that helps with showing and hiding system UI such as the 
+      status bar and navigation/system bar. This class uses 
+      backward-compatibility techniques described in &lt;a href= 
+      &quot;http://developer.android.com/training/backward-compatible-ui/index.html&quot;&gt; 
+      Creating Backward-Compatible UIs&lt;/a&gt; to ensure that devices running any 
+      version of ndroid OS are supported. More specifically, there are 
+      separate implementations of this abstract class: for newer devices, 
+      {@link #getInstance} will return a {@link SystemUiHiderHoneycomb} 
+      instance,while on older devices &nbsp;{@link #getInstance} will return 
+      a{@link SystemUiHiderBase} instance.&lt;p&gt; For more on system bars, see &lt;a 
+      href= 
+      &quot;http://developer.android.com/design/get-started/ui-overview.html#system-bars&quot; 
+      &gt; System Bars&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      @see android.view.View#setSystemUiVisibility(int)
+    </p>
+    <p style="margin-top:0;">
+      @see android.view.WindowManager.LayoutParams#FLAG_FULLSCREEN
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Last Modified</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Active</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Business Key Mutable</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Business Model</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Root</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Attributes Summary			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="8" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Visibility</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Type</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Initial Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Yq3nbyKGAqBQAQbf">FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">
+int</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+0x1			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Eq3nbyKGAqBQAQbh">FLAG_FULLSCREEN</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">
+int</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+0x2			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#0q3nbyKGAqBQAQbj">FLAG_HIDE_NAVIGATION</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">
+int</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+FLAG_FULLSCREEN | 0x4			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#cq3nbyKGAqBQAQbl">mActivity</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+protected			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Cq3nbyKGAqBQAQbn">mAnchorView</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+protected			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Sq3nbyKGAqBQAQbp">mFlags</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+protected			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">
+int</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#lu3nbyKGAqBQAQoY">mOnVisibilityChangeListener</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+protected			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">
+OnVisibilityChangeListener</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+sDummyListener			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#tu3nbyKGAqBQAQof">sDummyListener</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+private			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">
+OnVisibilityChangeListener</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+new OnVisibilityChangeListener(){
+  @Override public void onVisibilityChange(  boolean visible){
+  }
+}
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Operations Overview			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="6" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Visibility</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Return Type</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Name</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">
+SystemUiHider</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Kq3nbyKGAqBQAQbr">getInstance</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+protected			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#mq3nbyKGAqBQAQbz">SystemUiHider</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#eq3nbyKGAqBQAQb7">setup</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMs.html">
+boolean</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Bq3nbyKGAqBQAQb9">isVisible</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Rq3nbyKGAqBQAQb_">hide</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#xq3nbyKGAqBQAQcB">show</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#pq3nbyKGAqBQAQcD">toggle</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Zq3nbyKGAqBQAQcF">setOnVisibilityChangeListener</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Relationships Summary			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="6" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Begin</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">End</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Association.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Association.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#Au3nbyKGAqBQAQnM"> : Association</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_ZC3nbyKGAqBQAQW6.html">ChooseCity : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">SystemUiHider : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Association.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Association.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#5u3nbyKGAqBQAQoT"> : Association</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">SystemUiHider : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">OnVisibilityChangeListener : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Association.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Association.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#1u3nbyKGAqBQAQoa"> : Association</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">SystemUiHider : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">OnVisibilityChangeListener : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Generalization.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Generalization.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html#E53nbyKGAqBQAQoh"> : Generalization</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">SystemUiHider : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Lq3nbyKGAqBQAQcQ.html">SystemUiHiderBase : Class</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Attributes Detail			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<a name="Yq3nbyKGAqBQAQbf">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      When this flag is set, the {@link 
+      android.view.WindowManager.LayoutParams#FLAG_LAYOUT_IN_SCREEN}flag will 
+      be set on older devices, making the status bar &quot;float&quot; on top of the 
+      activity layout. This is most useful when there are no controls at the 
+      top of the activity layout. &lt;p&gt; This flag isn't used on newer devices 
+      because the &lt;a 
+      href=&quot;http://developer.android.com/design/patterns/actionbar.html&quot;&gt;action 
+      bar&lt;/a&gt;, the most important structural element of an Android app, should 
+      be visible and not obscured by the system UI.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">int</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">classifier</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="Eq3nbyKGAqBQAQbh">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">FLAG_FULLSCREEN</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      When this flag is set, &nbsp;{@link #show()} and {@link #hide()} will 
+      togglethe visibility of the status bar. If there is a navigation bar, 
+      show and hide will toggle low profile mode.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">int</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">classifier</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="0q3nbyKGAqBQAQbj">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">FLAG_HIDE_NAVIGATION</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      When this flag is set, &nbsp;{@link #show()} and {@link #hide()} will 
+      togglethe visibility of the navigation bar, if it's present on the 
+      device and the device allows hiding it. In cases where the navigation 
+      bar is present but cannot be hidden, show and hide will toggle low 
+      profile mode.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">int</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">classifier</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="cq3nbyKGAqBQAQbl">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">mActivity</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The activity associated with this UI hider object.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+android.app.Activity			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">protected</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="Cq3nbyKGAqBQAQbn">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">mAnchorView</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The view on which &nbsp;{@link View#setSystemUiVisibility(int)} will be 
+      called.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+android.view.View			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">protected</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="Sq3nbyKGAqBQAQbp">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">mFlags</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The current UI hider flags.
+    </p>
+    <p style="margin-top:0;">
+      @see #FLAG_FULLSCREEN
+    </p>
+    <p style="margin-top:0;">
+      @see #FLAG_HIDE_NAVIGATION
+    </p>
+    <p style="margin-top:0;">
+      @see #FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">int</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">protected</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="lu3nbyKGAqBQAQoY">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">mOnVisibilityChangeListener</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The current visibility callback.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">OnVisibilityChangeListener</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">protected</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Referencing Association End</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(null) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='null'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<span class="TableContent">mOnVisibilityChangeListener : Association End</span>				</span>
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="tu3nbyKGAqBQAQof">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">sDummyListener</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      A dummy no-op callback for use when there is no other listener set.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">OnVisibilityChangeListener</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Allow Empty Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Setter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Has Getter</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">private</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Multiplicity</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">classifier</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Aggregation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">None</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived Union</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Read Only</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Is ID</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Referencing Association End</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(null) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='null'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<span class="TableContent">sDummyListener : Association End</span>				</span>
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Operations Detail			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<a name="Kq3nbyKGAqBQAQbr">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">activity</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Documentation</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The activity whose window's system UI should be controlled by this class.
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Author</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">hagar</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Create Date Time</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Quality Score</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Recalculate</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+android.app.Activity						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">anchorView</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Documentation</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The view on which {@link View#setSystemUiVisibility(int)} will be called.
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Author</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">hagar</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Create Date Time</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Quality Score</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Recalculate</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+android.view.View						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">flags</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Documentation</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Either 0 or any combination of {@link #FLAG_FULLSCREEN} , {@link 
+      #FLAG_HIDE_NAVIGATION} , and {@link 
+      #FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES} .
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Author</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">hagar</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Create Date Time</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Quality Score</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Recalculate</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">int</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">getInstance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Creates and returns an instance of &nbsp;{@link SystemUiHider} that 
+      isappropriate for this device. The object will be either a {@link 
+      SystemUiHiderBase} or {@link SystemUiHiderHoneycomb} depending onthe 
+      device.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">
+SystemUiHider</a>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">classifier</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="mq3nbyKGAqBQAQbz">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">activity</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Author</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">hagar</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Create Date Time</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Quality Score</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Recalculate</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+android.app.Activity						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">anchorView</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Author</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">hagar</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Create Date Time</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Quality Score</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Recalculate</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+android.view.View						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">flags</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Author</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">hagar</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Create Date Time</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Quality Score</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Recalculate</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMx.html">int</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">SystemUiHider</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">protected</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">protected</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="eq3nbyKGAqBQAQb7">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">setup</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Sets up the system UI hider. Should be called from {@link 
+      Activity#onCreate}.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="Bq3nbyKGAqBQAQb9">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">isVisible</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns whether or not the system UI is visible.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQMs.html">
+boolean</a>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="Rq3nbyKGAqBQAQb_">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hide</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Hide the system UI.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="xq3nbyKGAqBQAQcB">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">show</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Show the system UI.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="pq3nbyKGAqBQAQcD">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">toggle</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Toggle the visibility of the system UI.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="Zq3nbyKGAqBQAQcF">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">listener</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Author</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">hagar</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Create Date Time</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Quality Score</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Recalculate</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">OnVisibilityChangeListener</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">setOnVisibilityChangeListener</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Documentation</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Registers a callback, to be triggered when the system UI visibility 
+      changes.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<a target="_content_pane" class="ItemLink" href="DataType_rXpnbyKGAqBQAQM0.html">
+void</a>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Relationships Detail			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<a name="Au3nbyKGAqBQAQnM">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">From</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Role</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent"></span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Element</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+								<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+								</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_ZC3nbyKGAqBQAQW6.html">ChooseCity : Class</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Navigable</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">false</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">To</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Role</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">mSystemUiHider</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Element</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+								<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+								</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">SystemUiHider : Class</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Navigable</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">true</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Last Modified</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="5u3nbyKGAqBQAQoT">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">From</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Role</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent"></span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Element</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+								<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+								</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">SystemUiHider : Class</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Navigable</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">false</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">To</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Role</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">mOnVisibilityChangeListener</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Element</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+								<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+								</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">OnVisibilityChangeListener : Class</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Navigable</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">true</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Last Modified</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="1u3nbyKGAqBQAQoa">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">From</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Role</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent"></span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Element</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+								<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+								</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_Qq3nbyKGAqBQAQbd.html">SystemUiHider : Class</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Navigable</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">false</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">To</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Role</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">sDummyListener</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Element</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+								<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+								</div>
+&nbsp;<a target="_content_pane" class="ItemLink" href="Class_lq3nbyKGAqBQAQcJ.html">OnVisibilityChangeListener : Class</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Navigable</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">true</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Last Modified</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:04</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Derived</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<a name="E53nbyKGAqBQAQoh">
+</a>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Author</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hagar</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Create Date Time</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:05</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Last Modified</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">25-Mar-2014 01:43:05</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Quality Score</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Recalculate</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="Category">
+Occupied Diagrams			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Diagram</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="2" class="TableHeaderLine2">
+			</td>
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<div style="height: 20px;">
+	</div>
+	<table width="100%" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+			<td class="FooterLine">
+			</td>
+		</tr>
+	</table>
+	<div class="HeaderText">
+CityWalksGroup3 Documentation	</div>
+</body>
+</html>

@@ -106,10 +106,9 @@ public class MainActivity extends FragmentActivity implements LocationListener {
         addMarker();
         setUpSpeechToTextListener();
         setUpListeners();
-    
+        checkLocationServices();
         
     }
-    
 
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	private void setUpMap()
@@ -123,7 +122,7 @@ public class MainActivity extends FragmentActivity implements LocationListener {
     	{
     	      //do nothing 
     	}
-    	//mpve camera to new latLong and zoom level
+    	//mpve camera to new latLong and zoom leve
     	aMap.setMyLocationEnabled(true);
     	aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(centre, 17));
     	
@@ -263,5 +262,44 @@ public class MainActivity extends FragmentActivity implements LocationListener {
 	    return super.onOptionsItemSelected(item);
 	    }
 	}
+	private void checkLocationServices() {
+  	  boolean gpsEnabled = false, networkEnabled= false;
+  	  
+        LocationManager mgr = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+    	try
+    	{
+    		gpsEnabled = mgr.isProviderEnabled(LocationManager.GPS_PROVIDER);
+           
+    	}catch(Exception ex){}
+        try
+        {
+            networkEnabled = mgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+            
+        }catch(Exception ex){}
 
+        if(!gpsEnabled && !networkEnabled){
+        	AlertDialog builder = new AlertDialog.Builder(this).create();
+            builder.setTitle(R.string.no_location);  // GPS not found
+            builder.setMessage(getResources().getString(R.string.no_location_message)); // Want to enable?
+            builder.setButton(DialogInterface.BUTTON_NEGATIVE, getResources().getString(R.string.no),
+            		new DialogInterface.OnClickListener() {
+            		@Override
+            		public void onClick(DialogInterface dialog, int which) {
+            		}
+            		});
+            		builder.setButton(DialogInterface.BUTTON_POSITIVE, getResources().getString(R.string.yes),
+            		new DialogInterface.OnClickListener() {
+            		@Override
+            		public void onClick(DialogInterface dialog, int which) {
+            			startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+            		}
+            		});
+            		builder.show();
+        }
+        else
+        {
+        	
+        }
+        aMap.setMyLocationEnabled(true);
+	}
 }

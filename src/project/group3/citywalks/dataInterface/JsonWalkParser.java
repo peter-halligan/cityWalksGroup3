@@ -17,15 +17,21 @@ public class JsonWalkParser {
 		ArrayList<Walk> walks = new ArrayList<Walk>();
 		ArrayList<Coordinate> coordinates = new ArrayList<Coordinate>();
 		ArrayList<POI> pois = new ArrayList<POI>();
-		
-		JSONObject jObjWalk = new JSONObject(aWalk);
-		JSONArray jArrWalk = jObjWalk.getJSONArray("walks");
-		
-		JSONObject jObjCord = new JSONObject(coords);
-		JSONArray jArrCord = jObjCord.getJSONArray("coordinates");
-		
-		JSONObject jObjPoint = new JSONObject(points);
-		JSONArray jArrPoint = jObjPoint.getJSONArray("pois");
+		JSONObject jObjWalk;
+		JSONArray jArrWalk;
+		JSONObject jObjCord;
+		JSONArray jArrCord;
+		JSONObject jObjPoint;
+		JSONArray jArrPoint;
+	
+			jObjWalk = new JSONObject(aWalk);
+			jArrWalk = jObjWalk.getJSONArray("walks");
+			
+			jObjCord = new JSONObject(coords);
+		    jArrCord = jObjCord.getJSONArray("coordinates");
+			
+			jObjPoint = new JSONObject(points);
+			jArrPoint = jObjPoint.getJSONArray("pois");
 		
 		for(int i = 0; i < jArrCord.length(); i ++)
 		{
@@ -81,8 +87,9 @@ public class JsonWalkParser {
 		}
 		
 		return walks;	
+		}
+		
 
-	}
 
 	private static float  getFloat(String tagName, JSONObject jObj) throws JSONException {
 		return (float) jObj.getDouble(tagName);

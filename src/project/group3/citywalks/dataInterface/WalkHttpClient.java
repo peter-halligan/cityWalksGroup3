@@ -12,8 +12,8 @@ public class WalkHttpClient {
 	
 	private static String base_url = "http://www.peterhalligan.com/";
 	
-	public String getCordinates(String cityId){
-		String coordinates = base_url + "get_coordinates.php?" +"cityId=" + cityId;
+	public String getCordinates(String cityId, String type){
+		String coordinates = base_url + "get_coordinates3.php?" + type+"Id=" + cityId;
 		try {
 			HttpURLConnection con = (HttpURLConnection) ( new URL(coordinates)).openConnection();
 			
@@ -41,9 +41,9 @@ public class WalkHttpClient {
 		return null;
 	}
 	
-	public String getWalk(String cityId)
+	public String getWalk(String cityId, String type)
 	{
-		String walk = base_url + "get_walk.php?" +"cityId=" + cityId;
+		String walk = base_url + "get_walk3.php?" +type+"Id=" + cityId;
 		try {
 			HttpURLConnection con = (HttpURLConnection) ( new URL(walk)).openConnection();
 			
@@ -72,9 +72,9 @@ public class WalkHttpClient {
 		
 	}
 	
-	public String getPoi(String cityId)
+	public String getPoi(String cityId, String type)
 	{
-		String poi = base_url + "get_poi.php?" +"cityId=" + cityId;
+		String poi = base_url + "get_poi3.php?" +type+"Id=" + cityId;
 		try {
 			HttpURLConnection con = (HttpURLConnection) ( new URL(poi)).openConnection();
 			

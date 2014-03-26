@@ -8,7 +8,12 @@
     <string name="choose_city">Choose City</string>
     <string name="dummy_content"></string>
     <string name="title_activity_choose_city">ChooseCity</string>
-	<string name = "sign in"> Sign In</string>
+    <string name="sign_in"> Sign In</string>
+    <string name="no_location">Location services turned off</string>
+    <string name="no_location_message">do you want to enable location services?</string>
+	<string name="yes">go to settings</string>
+	<string name="no">No</string>
+	
     <string-array name="cities">
         <item>Cork</item>
         <item>Dublin</item>
@@ -19,5 +24,9 @@
     <string name="title_activity_list_walk">ListWalk</string>
     <string name="title_activity_poi_details">PoiDetails</string>
     <string name="PoiName">Loading POI</string>
-
+    <string name="title_activity_dummy">Dummy</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="toggle_location">Turn GPS on/off</string>
+	<string name="change_city">Change City</string>
+	<string name="change_language">Change Language</string>
 </resources>

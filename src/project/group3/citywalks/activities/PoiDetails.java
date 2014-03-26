@@ -2,14 +2,15 @@ package project.group3.citywalks.activities;
 
 import java.util.Locale;
 
-import project.group3.citywalks.R;
 import project.group3.citywalks.objects.POI;
+import project.group3.citywalks.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.speech.tts.TextToSpeech;
-import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 public class PoiDetails extends Activity {
@@ -58,5 +59,21 @@ public class PoiDetails extends Activity {
 		getMenuInflater().inflate(R.menu.poi_details, menu);
 		return true;
 	}
-
+	public boolean onOptionsItemSelected(MenuItem item) 
+	{
+		switch (item.getItemId()) 
+		{
+	        case R.id.change_city:
+	            startActivity(new Intent(this, ChooseCity.class));
+	            return true;
+	        case R.id.change_language:
+	    
+	            return true;
+	        case R.id.toggle_location:
+		        startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+		        return true;
+	    default:
+	    return super.onOptionsItemSelected(item);
+	    }
+	}
 }

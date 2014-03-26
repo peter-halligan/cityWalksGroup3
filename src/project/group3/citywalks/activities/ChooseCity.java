@@ -12,6 +12,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,9 +29,7 @@ import android.widget.Spinner;
  * @see SystemUiHider
  */
 public class ChooseCity extends Activity implements Serializable {
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = -8168505609876151458L;
 	int choice;
 	String city;
@@ -65,7 +66,6 @@ public class ChooseCity extends Activity implements Serializable {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		setContentView(R.layout.activity_choose_city);
 		
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
@@ -133,7 +133,10 @@ public class ChooseCity extends Activity implements Serializable {
 		// while interacting with the UI.
 		findViewById(R.id.Choose_city).setOnTouchListener(
 				mDelayHideTouchListener);
-		
+		/**
+		 * onclick listener which will save the users city choice then open the 
+		 * list walk activity displaying the users choice of walk
+		 */
 		findViewById(R.id.Choose_city).setOnClickListener( new View.OnClickListener() {
 		    @Override
 		    public void onClick(View v) {
@@ -160,14 +163,11 @@ public class ChooseCity extends Activity implements Serializable {
 				choice = position + 1;
 				
 			}
-
 			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
+			public void onNothingSelected(AdapterView<?> arg0) 
+			{
 				choice = 1;
-				
-			}
-			
-			
+			}	
 		});
 	}
 
@@ -212,6 +212,9 @@ public class ChooseCity extends Activity implements Serializable {
 		mHideHandler.removeCallbacks(mHideRunnable);
 		mHideHandler.postDelayed(mHideRunnable, delayMillis);
 	}
+	/**
+	 * save choice saves the user City Choice to the shared preferences
+	 */
 	private void saveChoice()
 	{
 		 //Inform the user the button has been clicked
@@ -220,11 +223,40 @@ public class ChooseCity extends Activity implements Serializable {
         editor.putInt("cityId", choice);
         editor.commit();
 	}
+	/**
+	 * this fucntion will open the list walk activty it also passes in a parameter of city id
+	 */
 	private void openNext()
 	{
 		Intent i = new Intent(ChooseCity.this, ListWalk.class);
         String city = String.valueOf(choice);
         i.putExtra("city", city);
         startActivity(i);
+	}
+	/**
+	 * creates a menu from xml
+	 */
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.choose_city, menu);
+		return true;
+	}
+	/**
+	 * call back listener to check which menu item has been clicked
+	 * menu item is passed in as an object
+	 */
+	public boolean onOptionsItemSelected(MenuItem item) 
+	{
+		switch (item.getItemId()) 
+		{
+	        case R.id.change_city:
+	            startActivity(new Intent(this, ChooseCity.class));
+	            return true;
+	        case R.id.toggle_location:
+		        startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+		        return true;
+	    default:
+	    return super.onOptionsItemSelected(item);
+	    }
 	}
 }

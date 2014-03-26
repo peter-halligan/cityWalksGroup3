@@ -14,11 +14,8 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import android.util.Log;
 
 public class JsonUserParse {
     static InputStream is = null;
@@ -57,20 +54,19 @@ public class JsonUserParse {
 	            StringBuilder sb = new StringBuilder();
 	            String line = null;
 	            while ((line = reader.readLine()) != null) {
-	                sb.append(line + "n");
+	                sb.append(line + "\n");
 	            }
 	            is.close();
 	            jsonLogin = sb.toString();
-	            Log.e("JSON", jsonLogin);
 	        } catch (Exception e) {
-	            Log.e("Buffer Error", "Error converting result " + e.toString());
+	           // Log.e("Buffer Error", "Error converting result " + e.toString());
 	        }
 	 
 	        // try parse the string to a JSON object
 	        try {
 	            jObj = new JSONObject(jsonLogin);           
 	        } catch (JSONException e) {
-	            Log.e("JSON Parser", "Error parsing data " + e.toString());
+	          //  Log.e("JSON Parser", "Error parsing data " + e.toString());
 	           
 	        }
 	 

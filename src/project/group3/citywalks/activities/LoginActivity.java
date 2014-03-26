@@ -1,4 +1,4 @@
-package project.group3.citywalks;
+package project.group3.citywalks.activities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
-import project.group3.citywalks.activities.ListWalk;
+import project.group3.citywalks.R;
 import project.group3.citywalks.dataInterface.JsonUserParse;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,9 +14,11 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
@@ -24,8 +26,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Activity which displays a login screen to the user, offering registration as
- * well.
+ * Activity which displays a login screen to the user, 
  */
 public class LoginActivity extends Activity {
 	Integer userId;
@@ -35,7 +36,7 @@ public class LoginActivity extends Activity {
 	 */
 	private UserLoginTask mAuthTask = null;
 
-	// Values for email and password at the time of the login attempt.
+	// Values for username and password at the time of the login attempt.
 	private String userName;
 	private String mPassword;
 
@@ -43,10 +44,6 @@ public class LoginActivity extends Activity {
 	private EditText mUserNameView;
 	private EditText mPasswordView;
 	private View mLoginFormView;
-	private View mLoginStatusView;
-	private TextView mLoginStatusMessageView;
-	
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -54,7 +51,6 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.activity_login);
 
 		// Set up the login form.
-		
 		mUserNameView = (EditText) findViewById(R.id.email);
 
 		mPasswordView = (EditText) findViewById(R.id.password);
@@ -72,8 +68,8 @@ public class LoginActivity extends Activity {
 				});
 
 		mLoginFormView = findViewById(R.id.login_form);
-		mLoginStatusView = findViewById(R.id.login_status);
-		mLoginStatusMessageView = (TextView) findViewById(R.id.login_status_message);
+	//	mLoginStatusView = findViewById(R.id.login_status);
+	//	mLoginStatusMessageView = (TextView) findViewById(R.id.login_status_message);
 
 		findViewById(R.id.sign_in_button).setOnClickListener(
 				new View.OnClickListener() {
@@ -92,8 +88,8 @@ public class LoginActivity extends Activity {
 	}
 
 	/**
-	 * Attempts to sign in or register the account specified by the login form.
-	 * If there are form errors (invalid email, missing fields, etc.), the
+	 * Attempts to sign in
+	 * If there are form errors (invalid userName, missing fields, etc.), the
 	 * errors are presented and no actual login attempt is made.
 	 */
 	public void attemptLogin() {
@@ -143,13 +139,15 @@ public class LoginActivity extends Activity {
 		}
 	}
 
-	
 	/**
-	 * Represents an asynchronous login/registration task used to authenticate
-	 * the user.
+	 *  asynchronous login  task used to authenticate the user.
 	 */
 	public class UserLoginTask extends AsyncTask<String, Void, Integer> {
-		
+		/**
+		 * method to check details of user
+		 * @param params String array containing username and password
+		 * @return Integer userid
+		 */
 		protected Integer doInBackground(String... params) {
 			String userName = params[0];
 			String password = params[1];
@@ -162,6 +160,11 @@ public class LoginActivity extends Activity {
 		}
 
 		@Override
+		/**
+		 * after executing the login task either save userid or post message stating not able to login
+		 * the end of the activity begins a new intent
+		 * @param userId integer retrieved from async return
+		 */
 		protected void onPostExecute(final Integer userId) {
 			if(userId !=null)
 			{
@@ -187,7 +190,24 @@ public class LoginActivity extends Activity {
 		protected void onCancelled() {
 			mAuthTask = null;
 		}
-
-
+	}
+	/**
+	 * function dealing with menu clicks
+	 * @param item than was clicks
+	 * @return boolean 
+	 */
+	public boolean onOptionsItemSelected(MenuItem item) 
+	{
+		switch (item.getItemId()) 
+		{
+	        case R.id.change_city:
+	            startActivity(new Intent(this, ChooseCity.class));
+	            return true;
+	        case R.id.toggle_location:
+		        startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+		        return true;
+	    default:
+	    return super.onOptionsItemSelected(item);
+	    }
 	}
 }
